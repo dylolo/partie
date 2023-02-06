@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var montant;
+let reste;
+let  b2000, b1000, b500, p250, p200, p100, p50, p25; 
+
+montant= parseInt(prompt("Veillez saisir un montant:"));
+b2000= Math.floor(montant/2000);
+reste=  (montant%2000);
+b1000= Math.floor(reste/1000);
+reste= (reste%1000);
+b500= Math.floor(reste/500);
+reste=(reste%500);
+p250=Math.floor(reste/250);
+reste=(reste%250);
+p200=Math.floor(reste/200);
+reste=(reste%100);
+p100= Math.floor(reste/100);
+reste= (reste%100);
+p50= Math.floor(reste/50);
+reste= (reste%50);
+p25= Math.floor(reste/25);
+reste= (reste%25);
+
+alert("vous avez" + b2000 + "billet de 2000fcfa, " + b1000 + "billet de 1000fcfa, " 
++ b500 + "billet de 500fcfa, " + p250 + "pieces de 250fcfa, " 
++ p200+ "pieces de 200fcfa, " + p100 + "pieces de 100fcfa, " 
++ p50+ "pieces de 50fcfa, " + p25 + "pieces de 25fcfa  et il vous reste" +reste+ "fcfa");
+</script>
+
+</body>
+</html>
